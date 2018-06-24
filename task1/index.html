@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> FORM </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|PT+Sans|Shrikhand" rel="stylesheet">
+
+  </head>
+  <body>
+    <h1> The Question Form </h1>
+    <form name="quiz_form" >
+      <p> what is your name ? </p>
+      <input type="text" id="aQ1" name="Q1" type="text" autofocus placeholder="Enter your name" required >
+      <p> What is your age ?</p>
+      <input type="text" id="aQ2" name="Q2" type="number" placeholder="Enter your age"required >
+      <p> What is summition of 10 + 20 ?</p>
+      <input type="radio" id="aQ3" name="Q3" value="50">50 <br>
+      <input type="radio" id="aQ3" name="Q3" value="30">30 <br>
+      <input type="radio" id="aQ3" name="Q3" value="40">40 <br>
+      <p> What is cairo ?</p>
+      <input type="radio" id="aQ4" name="Q4" value="capital of Qater">capital of Qater <br>
+      <input type="radio" id="aQ4" name="Q4" value="capital of Egypt">capital of Egypt <br>
+      <input type="radio" id="aQ4" name="Q4" value="capital of Tunise">capital of Tunise <br><br>
+      <input type="button" id="Ans_bt" value="ANS" onclick="check();">
+    </form>
+    <div id="after_fin">
+      <p id="fin"> Make good</p>
+      <div id="count">
+      </div>
+
+    </div>
+
+
+
+
+
+    <script  src="main.js">
+    </script>
+  </body>
+</html>

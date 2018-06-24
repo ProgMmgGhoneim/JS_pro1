@@ -1,0 +1,8 @@
+body{
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Shrikhand', cursive;
+  font-family: 'PT Sans', sans-serif;
+}
+#after_fin{
+  visibility: hidden;
+}
