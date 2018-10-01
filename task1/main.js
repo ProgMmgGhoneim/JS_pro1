@@ -4,6 +4,7 @@ function check() {
   var q3 =document.quiz_form.Q3.value
   var q4 =document.quiz_form.Q4.value
 
+
   if(q1 == " " || q2 == " "){
     alert('you must enter the value for all questiom !')
   }else {
