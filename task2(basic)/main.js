@@ -99,3 +99,55 @@ filename = "system.php"
 console.log(filename.split('.').pop());
 filename = "abc.js"
 console.log(filename.split('.').pop());
+
+
+// TAsk 10
+var audio = new Audio();
+audio.src ='short.mp3';
+audio.loop = true;
+
+var timeout;
+function setAlarm(button) {
+  var ms =document.getElementById('alarmTime').valueAsNumber;
+  if (isNaN(ms)) {
+    alert('Enter the Time');
+    return;
+
+  }
+  var alarm =new Date(ms);
+  var alarmTime = new Date(alarm.getUTCFullYear(),alarm.getUTCMonth(),alarm.getUTCDate(),alarm.getUTCHours(),alarm.getUTCMinutes());
+  var difference = alarmTime.getTime()- (new Date()).getTime();
+  console.log(difference);
+  console.log(alarmTime);
+  if (difference <= 0) {
+    alert('Time is pass');
+    return;
+  }
+
+timeout = setTimeout(initAlarm,difference);
+button.innerText='cancel';
+button.setAttribute('onclick','cancelbutton(this)')
+
+};
+
+function cancelbutton(button) {
+  button.innerText='Set Alarm';
+  button.setAttribute('onClick','setAlarm(this)');
+  clearTimeout(timeout);
+
+}
+function initAlarm() {
+  audio.play();
+  document.getElementById('alarmOption').style.display='';
+};
+
+function stop() {
+  audio.pause();
+  audio.currentTime = 0;
+  document.getElementById('alarmOption').style.display='none';
+
+}
+function snooze() {
+  stop();
+  setTimeout(initAlarm ,3600);
+}

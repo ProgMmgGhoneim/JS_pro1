@@ -34,6 +34,15 @@
     </li>
     <li> Know the site URL</li>
     <li>Get the extension of a filename</li>
+    <li>
+      Alarm
+      <input type="datetime-local" id ="alarmTime">
+      <button type="submit" onclick="setAlarm(this)" id="alaretButton"> Set Alarm </button>
+      <div id="alarmOption" style="display:none;">
+        <button type="submit" onclick="snooze()"> snozee 5 minutes</button>
+        <button type="submit" onclick="stop()"> stop alarm</button>
+      </div>
+    </li>
 
 
 
