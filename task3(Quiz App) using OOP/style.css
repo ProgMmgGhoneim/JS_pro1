@@ -1,5 +1,5 @@
 body{
-  background-color: #000;
+  background-color: #152B48;
   margin: 20px auto;
 }
 .content{
@@ -25,7 +25,7 @@ body{
   font-family: sans-serif;
   font-size: 35px;
   padding: 20px;
-  background: #123456;
+  background: #005FBA;
   border-radius: 20px;
   text-align: center;
   color: #fff;
@@ -48,7 +48,7 @@ body{
   border-radius: 20px;
   margin: 10px 10px;
   padding: 3px;
-  background: #123456;
+  background: #005FBA;
   color: #fff;
 }
 #btn1:hover, #btn2:hover, #btn3:hover, #btn0:hover {
