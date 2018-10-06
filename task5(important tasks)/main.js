@@ -130,4 +130,37 @@ function checkKeyPressed(evt) {
   // }
 }
 ///////////////////////////
-  
+var img1 = document.getElementById('img1') ,
+    img2 = document.getElementById('img2');
+
+var node = document.createElement("span");
+var textnode ;
+
+img1.onmouseover =function () {
+  this.style.height = "200px";
+  this.style.width = "200px";
+  textnode = document.createTextNode("فلسطين");
+  node.appendChild(textnode);
+  // this.title='فلسطين ';
+  document.getElementById('imges').appendChild(node);
+};
+img1.onmouseout =function () {
+  this.style.height = "120px";
+  this.style.width = "120px";
+  node.textContent =''
+  document.getElementById('imges').appendChild(node);
+};
+img2.onmouseover =function () {
+  this.style.height = "200px";
+  this.style.width = "200px";
+  var textnode = document.createTextNode("مصر");
+  node.appendChild(textnode);
+  // this.title='فلسطين ';
+  document.getElementById('imges').appendChild(node);
+};
+img2.onmouseout =function () {
+  this.style.height = "120px";
+  this.style.width = "120px";
+  node.textContent =''
+  document.getElementById('imges').appendChild(node);
+};
