@@ -151,3 +151,8 @@ function snooze() {
   stop();
   setTimeout(initAlarm ,3600);
 }
+
+// //////////
+alert('Yessssssssssssss ____________ alert');
+confirm('Are you sure ___________ confirm');
+prompt('your name _________ prompt')
